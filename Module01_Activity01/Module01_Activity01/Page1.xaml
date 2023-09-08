@@ -6,28 +6,45 @@
         <StackLayout>
             <Grid>
                 <Grid.Resources>
-                    <Style x:Key="SubmitButton" TargetType="Button">
-                        <Setter Property="FontSize" Value="30"/>
-                        <Setter Property="BackgroundColor" Value=" DarkGreen"/>
-                        <Setter Property="TextColor" Value="White"/>
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
 
                     <Style x:Key="WarningButton" TargetType="Button">
-                        <Setter Property="FontSize" Value="30"/>
+                        <Setter Property="FontSize" Value="15"/>
                         <Setter Property="BackgroundColor" Value=" Red"/>
                         <Setter Property="TextColor" Value="White"/>
-                        <Setter Property="CornerRadius" Value="20"/>
+                        <Setter Property="CornerRadius" Value="15"/>
+                        <Setter Property="Margin" Value="-250,20,0,0"/>
+                    </Style> 
+                    
+                    <Style x:Key="SubmitButton" TargetType="Button">
+                        <Setter Property="FontSize" Value="15"/>
+                        <Setter Property="BackgroundColor" Value="DarkCyan"/>
+                        <Setter Property="TextColor" Value="White"/>
+                        <Setter Property="CornerRadius" Value="15"/>
+                        <Setter Property="Padding" Value="50,0,50,0"/>
+                        <Setter Property="Margin" Value="185,50,50,50"/>
+                        
+
                     </Style>
+
+                    <Style x:Key="ExtraStyle" TargetType="Button">
+                        <Setter Property="FontSize" Value="15"/>
+                        <Setter Property="BackgroundColor" Value="BurlyWood"/>
+                        <Setter Property="TextColor" Value="White"/>
+                        <Setter Property="CornerRadius" Value="15"/>
+                        <Setter Property="Margin" Value="-250,20,0,0"/>
+                    </Style>
+
+                    
 
                 </Grid.Resources>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Button Text="Page 1"  Style = "{StaticResource SubmitButton}" Grid.Row="0" />
-                <Button Text="Submit"  Style = "{StaticResource SubmitButton}" Grid.Row="1" />
+                <Button Text="Page 1"  Style = "{StaticResource ExtraStyle}" Grid.Row="0" />
                 <Button Text="Page 2" Style="{StaticResource WarningButton}" Grid.Row="2" />
+                <Button Text="Submit"  Style = "{StaticResource SubmitButton}" Grid.Row="1" />
+                
             </Grid>
         </StackLayout>
     </ContentPage.Content>

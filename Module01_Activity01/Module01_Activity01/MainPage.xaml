@@ -5,28 +5,21 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Label Text="Name: Arnold Nicholas Lim" FontSize="Title" Padding="30,10,30,10"/>
+        
+        
         <Button Clicked="OpenPage1">
             <Button.Resources>
                 <Style TargetType="Button">
-                    <Setter Property="FontSize" Value="30"/>
-                    <Setter Property="BackgroundColor" Value=" Blue"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="BackgroundColor" Value="Chocolate"/>
                     <Setter Property="TextColor" Value="White"/>
-                    <Setter Property="CornerRadius" Value="20"/>
-                    <Setter Property="Text" Value="Ipasok"/>
+                    <Setter Property="CornerRadius" Value="15"/>
+                    <Setter Property="Text" Value="Entry"/>
+                    <Setter Property="Padding" Value="20"/>
+                    <Setter Property="Margin" Value="20,20,250,20"/>
                 </Style>
             </Button.Resources>
         </Button>
@@ -34,11 +27,13 @@
         <Button Clicked="OpenPage2">
             <Button.Resources>
                 <Style TargetType="Button">
-                    <Setter Property="FontSize" Value="30"/>
-                    <Setter Property="BackgroundColor" Value=" Blue"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="BackgroundColor" Value="DarkBlue"/>
                     <Setter Property="TextColor" Value="White"/>
-                    <Setter Property="CornerRadius" Value="20"/>
-                    <Setter Property="Text" Value="Page2"/>
+                    <Setter Property="CornerRadius" Value="15"/>
+                    <Setter Property="Text" Value="Entry 2"/>
+                    <Setter Property="Padding" Value="20"/>
+                    <Setter Property="Margin" Value="20,-80,-200,20"/>
                 </Style>
             </Button.Resources>
         </Button>
